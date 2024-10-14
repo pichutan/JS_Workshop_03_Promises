@@ -1,0 +1,55 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.gradientbackground {
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+.card-container {
+    :not(:last-child) {
+        margin-right: 5px;
+        margion-bottom: 5px
+    }
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.information-container {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(204, 204, 204, 0.8);
+    width: 100%;
+    padding: 20px 15px;
+
+    .information-title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding-bottom: 5px;
+    }
+
+    .information-list {
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            li {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                flex-direction: row;
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+
+    }
+}
