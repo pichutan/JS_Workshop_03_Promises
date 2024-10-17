@@ -24,6 +24,8 @@ Create a card from the template in the `task04_mockup`folder. This card contains
 
 Don't fetch all data until you really need them. Only fetch the data which is necessary for your task.
 
+The starting country is always *Germany*.
+
 ## Additional Task
 Exchange the dummy icons with new ones, which describe the data better. You can checkout https://fontawesome.com/ for different icons. Be aware: You can only use the free version icons for it.
 
