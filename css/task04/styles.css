@@ -6,50 +6,68 @@ body {
 }
 
 .gradientbackground {
-    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-}
-
-.card-container {
-    :not(:last-child) {
-        margin-right: 5px;
-        margion-bottom: 5px
-    }
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
     display: flex;
-    height: 100vh;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    padding-top: 1%;
 }
 
-.information-container {
-    position: absolute;
-    bottom: 0;
-    background-color: rgba(204, 204, 204, 0.8);
+.country-card {
+    width: 600px;
+    background-color: #fcebd6;
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.flag-container {
+    background-color: #fbe4c7;
+    padding: 20px;
+}
+
+.country-flag {
     width: 100%;
-    padding: 20px 15px;
-
-    .information-title {
-        text-align: center;
-        font-weight: bold;
-        font-size: 1.5rem;
-        padding-bottom: 5px;
-    }
-
-    .information-list {
-        ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-
-            li {
-                display: flex;
-                align-items: center;
-                flex-wrap: wrap;
-                flex-direction: row;
-                i {
-                    margin-right: 5px;
-                }
-            }
-        }
-
-    }
+    height: auto;
 }
+
+.country-info {
+    background-color: #8b83ba;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+}
+
+.country-info span {
+    padding: 0 10px;
+    position: relative;
+}
+
+.country-info span:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -30px;
+    color: #ccc;
+    font-weight: bold;
+}
+.neighbors-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 600px;
+}
+
+.neighbor-flag {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+

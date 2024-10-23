@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Country Information</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
@@ -11,34 +11,35 @@
     <link href="css/fontawesome/fontawesome.min.css" rel="stylesheet" />
     <link href="css/fontawesome/brands.min.css" rel="stylesheet" />
     <link href="css/fontawesome/solid.min.css" rel="stylesheet" />
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/task01/scripts.js"></script>
 </head>
 <body class="gradientbackground">
-    <div class="card-container">
-        <div class="card" style="width: 30%;">
-            <img src="img/dummy.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Country Title</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item"><i class="fa-solid fa-user"></i> Capital: City</li>
-                <li class="list-group-item"><i class="fa-solid fa-user"></i> Timezone: Timezone</li>
-                <li class="list-group-item"><i class="fa-solid fa-user"></i> Currency: Eur</li>
-            </ul>
+<div class="card-container d-flex justify-content-around">
+    <div class="card" id="germany-card" style="width: 30%;">
+        <img id="germany-flag" src="" class="card-img-top" alt="Germany Flag">
+        <div class="card-body">
+            <h5 id="germany-name" class="card-title">Country Name</h5>
         </div>
-        <div class="card" style="width: 30%;">
-            <img src="img/dummy.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Country Title</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item"><i class="fa-solid fa-user"></i> Capital: City</li>
-                <li class="list-group-item"><i class="fa-solid fa-user"></i> Timezone: Timezone</li>
-                <li class="list-group-item"><i class="fa-solid fa-user"></i> Currency: Eur</li>
-            </ul>
-        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fa-solid fa-landmark"></i> Capital: <span id="germany-capital"></span></li>
+            <li class="list-group-item"><i class="fa-solid fa-clock"></i> Timezone: <span id="germany-timezone"></span></li>
+            <li class="list-group-item"><i class="fa-solid fa-money-bill-wave"></i> Currency: <span id="germany-currency"></span></li>
+        </ul>
     </div>
+
+    <div class="card" id="vietnam-card" style="width: 30%;">
+        <img id="vietnam-flag" src="" class="card-img-top" alt="Vietnam Flag">
+        <div class="card-body">
+            <h5 id="vietnam-name" class="card-title">Country Name</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fa-solid fa-landmark"></i> Capital: <span id="vietnam-capital"></span></li>
+            <li class="list-group-item"><i class="fa-solid fa-clock"></i> Timezone: <span id="vietnam-timezone"></span></li>
+            <li class="list-group-item"><i class="fa-solid fa-money-bill-wave"></i> Currency: <span id="vietnam-currency"></span></li>
+        </ul>
+    </div>
+</div>
 </body>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/task01/scripts.js"></script>
 </html>
