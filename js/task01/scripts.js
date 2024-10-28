@@ -1,6 +1,6 @@
 import createCard from "./card_generator.js"
 
-const CONUTRY_CODE = ["DE","VN"]
+const CONUTRY_CODE = ["DEU","VNM"]
 const cardContainer = document.getElementById(`card-container`);
 const processData = async (code) => {
   const url = `https://restcountries.com/v3.1/alpha/${code}`;
