@@ -11,11 +11,20 @@
     <link href="css/fontawesome/fontawesome.min.css" rel="stylesheet" />
     <link href="css/fontawesome/brands.min.css" rel="stylesheet" />
     <link href="css/fontawesome/solid.min.css" rel="stylesheet" />
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/task04/scripts.js"></script>
 </head>
 <body class="gradientbackground">
-
+<div id="country-card" class="card" style="width: 18rem; margin: auto; margin-top: 20px;">
+    <img id="country-flag" class="card-img-top" src="" alt="Country Flag">
+    <div class="card-body">
+        <h5 id="country-name" class="card-title"></h5>
+        <p id="country-info" class="card-text"></p>
+        <h6>Neighboring Countries:</h6>
+        <div id="neighbors"></div>
+    </div>
+</div>
+<div class="neighbors-container"></div>
 </body>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/task04/scripts.js"></script>
 </html>

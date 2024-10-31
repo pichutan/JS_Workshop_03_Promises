@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>TASK 03</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
@@ -17,27 +17,34 @@
 </head>
 <body class="gradientbackground">
     <div class="card-container">
-        <div class="card" style="width: 30%;">
-            <img src="img/dummy.png" class="card-img-top" alt="...">
+        <div class="card" style="width: 30%;" id="countryCard">
+            <img src="img/dummy.png" class="card-img-top" alt="..." id="countryFlag">
             <div class="card-body">
-                <h5 class="card-title">Country Title</h5>
+                <h5 class="card-title" id="countryName">Country Title</h5>
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item"><i class="fa-solid fa-user"></i> Capital: City</li>
-                <li class="list-group-item"><i class="fa-solid fa-user"></i> Timezone: Timezone</li>
-                <li class="list-group-item"><i class="fa-solid fa-user"></i> Currency: Eur</li>
+                <li class="list-group-item"><i class="fa-solid fa-user"></i> Capital: <span id="countryCapital">City</span></li>
+                <li class="list-group-item"><i class="fa-solid fa-user"></i> Timezone: <span id="countryTimezone">Timezone</span></li>
+                <li class="list-group-item"><i class="fa-solid fa-user"></i> Currency: <span id="countryCurrency">Eur</span></li>
             </ul>
         </div>
-        <div class="card" style="width: 30%;">
-            <img src="img/dummy.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Country Title</h5>
+    </div>
+
+    <!-- Error Modal -->
+    <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="errorModalLabel">Error</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="errorMessage">
+                    <!-- Error message will be displayed here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item"><i class="fa-solid fa-user"></i> Capital: City</li>
-                <li class="list-group-item"><i class="fa-solid fa-user"></i> Timezone: Timezone</li>
-                <li class="list-group-item"><i class="fa-solid fa-user"></i> Currency: Eur</li>
-            </ul>
         </div>
     </div>
 </body>
