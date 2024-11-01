@@ -53,3 +53,16 @@ body {
 
     }
 }
+
+#neighbors-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.neighbor-flag{
+    width: 30%;
+    margin: 4px;
+    cursor: pointer;
+    border: 1px solid black;
+}

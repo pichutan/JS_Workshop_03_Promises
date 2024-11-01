@@ -1,8 +1,6 @@
-const countryCard = document.getElementById('country-card');
 const countryFlag = document.getElementById('country-flag');
-const countryName = document.getElementById('country-name');
 const countryInfo = document.getElementById('country-info');
-const neighborsDiv = document.getElementById('neighbors');
+const neighborsContainer = document.getElementById('neighbors-container');
 
 const fetchCountryData = async (country) => {
   const response = await fetch(`https://restcountries.com/v3.1/name/${country}`);
@@ -11,18 +9,14 @@ const fetchCountryData = async (country) => {
 };
 
 const displayCountryInfo = (country) => {
-  console.log(countryFlag);
   countryFlag.src = country.flags.png;
-  countryName.textContent = country.name.common;
-  countryInfo.textContent = `Capital: ${country.capital[0]}, Population: ${country.population}`;
+  countryInfo.textContent = `${country.capital[0]} | ${Object.keys(country.currencies)[0]} | ${country.timezones}`;
   displayNeighbors(country.borders);
 };
 
 const displayNeighbors = (neighbors) => {
-  const neighborsContainer = document.querySelector('.neighbors-container');
   neighborsContainer.innerHTML = '';
   if (!neighbors) return;
-  console.log(neighbors);
   neighbors.forEach(border => {
     const apiUrl = `https://restcountries.com/v3.1/alpha/${border}`;
 
