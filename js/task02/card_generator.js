@@ -1,4 +1,4 @@
-export default function createCard(data,index) {
+export default function initializeFlagCard(data,index) {
   const cardTemplate = `
     <div class="carousel-item ${index == 0 ? "active" : ""}">
       <img src="${data.flags.png}" class="d-block w-100" alt="..." style="width: 600px; height: 300px;">

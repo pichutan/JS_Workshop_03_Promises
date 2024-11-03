@@ -1,4 +1,4 @@
-import createCard from "./card_generator.js"
+import initializeFlagCard from "./card_generator.js"
 
 const CONUTRY_CODE = ["DEU","VNM"]
 const cardContainer = document.getElementById(`card-container`);
@@ -11,7 +11,7 @@ const processData = async (code) => {
     }
 
     const json = await response.json();
-    cardContainer.innerHTML += createCard(json[0]);
+    cardContainer.innerHTML += initializeFlagCard(json[0]);
   } catch (error) {
     console.error(error.message);
   }

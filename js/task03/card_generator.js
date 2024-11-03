@@ -1,4 +1,4 @@
-export default function createCard(data) {
+export default function initializeFlagCard(data) {
   const cardTemplate = `
     <div class="card" style="width: 30%;">
         <img src="${data.flags.png}" class="card-img-top" alt="..." style="width: 100%; height: 300px;">

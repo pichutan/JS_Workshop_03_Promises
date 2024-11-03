@@ -1,4 +1,4 @@
-import createCard from "./card_generator.js"
+import initializeFlagCard from "./card_generator.js"
 
 const CONUTRY_CODE = ["DEU","VNM","CAN","CHN","USA"]
 const cardContainer = document.getElementById(`carousel-container`);
@@ -11,7 +11,7 @@ const processData = async (code,index) => {
     }
 
     const json = await response.json();
-    cardContainer.innerHTML += createCard(json[0],index);
+    cardContainer.innerHTML += initializeFlagCard(json[0],index);
   } catch (error) {
     console.error(error.message);
   }
